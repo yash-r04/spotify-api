@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,200;1,200&display=swap');
+
+.raleway-font {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url("https://i.pinimg.com/474x/5b/b3/81/5bb381ace92fdbf769c56f8abd05fb24.jpg");
+    background-color: darkblue;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+   
+}
+
+.container{
+    border: 1px solid black;
+    backdrop-filter: blur(20px);
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 100px rgb(0, 0, 0);
+    border-radius: 25px;
+    padding: 2%;
+}
+  
+button{
+    backdrop-filter: blur(10px);
+    border: 1px solid greenyellow;
+    border-radius:10px ;
+    text-decoration: none;
+    outline: none;
+    color: greenyellow;
+    padding: 1%;
+    margin: 1%;
+    background: black;
+    cursor: pointer;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    font-size: larger;
+    font-family: "Raleway", sans-serif;
+}
+
+button:focus{
+    background-color: greenyellow;
+    color: black;
+    font-weight: 700;
+}
+
+.butts{
+    padding: 1%;
+    font-weight: 800;
+}
+
+.song-item{
+    padding: 1%;
+    font-weight: 650;
+    font-size: large;
+}
+
+.song-item a{
+    text-decoration: underline;
+    color: rgb(89, 140, 13);
+}
+
+select{
+    background: black;
+    color: greenyellow;
+    text-decoration: none;
+    outline: none;
+    font-size: larger;
+    padding: 0.5%;
+    border-radius: 10px;
+    font-weight: 800;
+    font-family: 'Raleway',sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    background-image:linear-gradient(43deg,#ad16c7 0%, #2dcb18 46%, #FFCC70 100%);
+    background-clip: text;
+    color: transparent;
+    font-weight: 2000;
+}
+
+label{
+    font-size: larger;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+}

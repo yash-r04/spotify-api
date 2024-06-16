@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>songs recomendation</title>
+    <link href="static\styles.css" rel="stylesheet">
+    <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="user_deets">
+            <h1>Hi! Hello! Namaskara! {{dname}}</h1>
+        </div>
+            <div class="butts">
+
+                <form method="POST" action="/button_clicked">
+                    <label for="button_type">Get your :</label>
+                    <button type="submit" name="button_type" value="top_tracks">my top tracks!</button>
+                    <button type="submit" name="button_type" value="top_artist">my top artists!</button>
+                    <button type="submit" name="button_type" value="recommend">recommend songs!</button>
+                    <br>
+                    <label for="user_choice">For recomnendations, choose genre:</label>
+                    <select name="user_choice" id="user_choice">
+                        <option value="pop">POP</option>
+                        <option value="indie">Indie</option>
+                        <option value="k-pop">K-pop</option>
+                        <option value="hip-hop">Hip-hop</option>
+                        <option value="indian">Indian</option>
+                    </select>   
+                </form>
+            </div>
+        <div class="reccs">
+            {% for name, url,track_id in songs %}
+        <ul class="song-item raleway-font">
+            {{ name }}: <a href="{{ url }}" target="_blank">spotify link</a>
+            {% if track_id %}
+                <iframe src="https://open.spotify.com/embed/track/{{ track_id }}" width=100% height=80rem frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> 
+            {% endif %}
+        </ul>
+            {%endfor%}
+        </div>   
+
+        <script></script>
+</body>
+</html>
