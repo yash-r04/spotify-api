@@ -14,7 +14,7 @@ app.config['SESSION_COOKIE_NAME'] = 'your_session_cookie_name'
 
 client_id = os.getenv('Client_id')
 client_secret = os.getenv('Client_secret')
-redirect_uri = 'http://localhost:5000/callback'
+redirect_uri = 'https://yash-spotify-api.onrender.com'
 scope = 'user-library-read user-top-read user-read-private'
 
 cache_handler = FlaskSessionCacheHandler(session)
